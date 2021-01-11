@@ -7,5 +7,5 @@ node_modules/
 /config
 /setting/config
 
-/theme/*
-!/theme/panel/
+theme/
+!theme/panel/
