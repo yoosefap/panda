@@ -114,7 +114,7 @@ Vue.mixin({
             return {
                 enabled: true,
                 mode: 'records',
-                perPage: 10,
+                perPage: 1,
                 perPageDropdown: [5, 10, 20, 50],
                 nextLabel: this.LANG.panel.next,
                 prevLabel: this.LANG.panel.prev,
@@ -122,6 +122,7 @@ Vue.mixin({
                 ofLabel: this.LANG.panel.of,
                 pageLabel: this.LANG.panel.page, // for 'pages' mode
                 allLabel: this.LANG.panel.all,
+                dropdownAllowAll: false,
             }
         },
     },
