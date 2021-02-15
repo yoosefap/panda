@@ -20,5 +20,6 @@ class PandaDatabase extends PinooxDatabase
     const permission = 'com_pinoox_panda_permission';
     const group_permission = 'com_pinoox_panda_group_permission';
     const product = 'com_pinoox_panda_product';
+    const category = 'com_pinoox_panda_category';
 
 }

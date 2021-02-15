@@ -866,12 +866,6 @@ body {
           border-bottom: 1px solid #efefef;
           .trans;
 
-          &:hover {
-            .trans;
-            cursor: pointer;
-            background: #e9e9e9;
-          }
-
           .title {
             font-size: 1.5rem;
             color: @textColor3;
@@ -1722,10 +1716,14 @@ body {
 }
 
 @drawerPadding: 5%;
+.ch-drawer__header {
+  padding: 0 5px;
+}
 
 .drawer-wrapper {
+
   .drawer-header {
-    padding: 20px @drawerPadding;
+    padding: 0 @drawerPadding;
     font-size: 2em;
     color: @textColor;
     font-weight: 600;
@@ -1838,11 +1836,41 @@ body {
     }
   }
 
+  .toggleNest {
+    color: @textColor2;
+
+    .item {
+      width: 33px;
+      text-align: center;
+      height: 25px;
+      display: inline-block;
+      padding-top: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      background: #efefef;
+      border-radius: 4px;
+      margin: 0 3px;
+      .trans;
+
+      &:hover {
+        .trans;
+        cursor: pointer;
+        color: #fff;
+        background: @secondaryColor;
+      }
+    }
+  }
 }
 
 .nestable-category {
   max-width: 500px;
   margin: auto;
+
+  .is-dragging{
+    .nestable-list{
+      display: none;
+    }
+  }
 
   .nestable-item, .nestable-item-copy {
     padding: 10px;
@@ -1964,6 +1992,18 @@ body {
         user-select: none;
       }
 
+    }
+  }
+
+  &.collapse {
+    .nestable-item .nestable-list {
+      display: none;
+    }
+  }
+
+  &.expand {
+     .nestable-item .nestable-list {
+      display: block;
     }
   }
 }
