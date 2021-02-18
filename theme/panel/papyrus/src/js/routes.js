@@ -40,8 +40,13 @@ export const routes = [
                 component: ProductsList,
             },
             {
-                path: 'edit',
-                name: 'products-form',
+                path: 'add',
+                name: 'products-add',
+                component: ProductsForm,
+            },
+            {
+                path: 'edit/:product_id',
+                name: 'products-edit',
                 component: ProductsForm,
                 props: true,
             },

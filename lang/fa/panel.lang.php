@@ -8,6 +8,7 @@ return [
     'no' => 'خیر',
     'warning' => 'هشدار',
     'list' => 'لیست',
+    'back' => 'برگشت',
 
 
     /* table */

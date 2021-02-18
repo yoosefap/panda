@@ -64,4 +64,3 @@ let filter = function(text, length, clamp){
 };
 
 Vue.filter('truncate', filter);
-

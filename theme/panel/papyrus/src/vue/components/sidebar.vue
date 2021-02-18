@@ -19,7 +19,7 @@
                                     customClassName="icon stroke"/>
                         <span class="text">{{LANG.panel.orders}}</span>
                     </router-link>
-                    <router-link class="item" :to="{name:'write'}" exact-active-class="active">
+                    <router-link class="item" :to="{name:'products-list'}" exact-active-class="active">
                         <simple-svg :src="_icons.products"
                                     customClassName="icon stroke"/>
                         <span class="text">{{LANG.panel.products}}</span>
