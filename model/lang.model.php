@@ -22,6 +22,8 @@ class LangModel extends PinooxDatabase
         return [
             'front' => rlang('front'),
             'panel' => rlang('panel'),
+            'user' => rlang('user'),
+            'product' => rlang('product'),
         ];
     }
 

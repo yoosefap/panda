@@ -12,4 +12,7 @@ return array(
     'theme' => 'default',
     'theme-panel' => 'papyrus',
     'lang' => 'fa',
+    'service' => [
+        'cache/permission',
+    ],
 );

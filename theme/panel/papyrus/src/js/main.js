@@ -30,6 +30,7 @@ import Draggable from 'vuedraggable';
 Vue.component('simplebar', simplebar);
 Vue.component('apexchart', VueApexCharts);
 Vue.use(ChDrawer, {zIndex: 99999});
+Vue.use(VueNestable);
 Vue.use(VueGoodTablePlugin);
 Vue.use(VueSimpleSVG);
 Vue.use(Notifications);
@@ -63,4 +64,3 @@ let filter = function(text, length, clamp){
 };
 
 Vue.filter('truncate', filter);
-
